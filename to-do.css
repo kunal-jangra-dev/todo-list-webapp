@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    .logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.todo h2 {
+    color: #e2e8f0;
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo h2 img {
+    width: 28px;
+    border-radius: 6px;
+}
+
+.in {
+    display: flex;
+    background: rgba(255,255,255,0.1);
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 12px;
+    color: #e2e8f0;
+    font-size: 14px;
+}
+
+#Add {
+    border: none;
+    background: #6366f1;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Add:hover {
+    background: #4f46e5;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    padding: 12px 12px 12px 40px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    color: #e2e8f0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+
+ul li:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: #6366f1;
+    left: 10px;
+    top: 17px;
+}
+
+ul li.checked span {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: #6bf236;
+    left: 10px;
+    top: 10px;
+}
+ul li {
+    justify-content: space-between;
+}
+
+ul li span {
+    flex: 1;
+}
+.done-btn{
+    border: none;
+    background: #29295a;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
